@@ -1,38 +1,189 @@
-.App {
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+b,
+strong {
+  font-weight: 700;
+}
+
+
+img {
+  border: 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+fieldset {
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+  border: 1px solid silver;
+}
+textarea {
+  overflow: auto;
+}
+
+
+
+
+
+:root {
+  --accent-color: #373AF5;
+  --secondary-color: #8083A4;
+  --secondary: #2C2D76;
+  --critic-color: #E5596D;
+  --white: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400i,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+body {
+  position: relative;
+  //font-family: ‘PT Sans’, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.calculator__title {
+  position: relative;
+  color: white;
+  display: block;
+  font-size: 56px;
+  padding: 11px 60px;
+  line-height: 1;
+  margin: 40px auto 50px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator {  
+  background-image: url(./images/bg2.jpg);
+  padding: 40px;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calc__item {
+  background-color: var(--white);
+  box-shadow: 0 4px 4px rgba(4,5,73,.25),14px 14px 20px rgba(5,6,114,.2);
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 660px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  z-index: 1;
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calc__item:nth-child(1)  {
+  margin-right: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.calc__item h2 {
+  font-family: ‘PT Sans’, sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 0 32px;
+  text-align: center;
+  color: var(--secondary);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc {
+  display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: row;
+flex-direction: row;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-justify-content: center;
+justify-content: center;
 }

@@ -1,26 +1,63 @@
-import React from 'react';
+import * as React from 'react';
 import logo from './logo.svg';
+import Card from './Card';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Fitness app
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//import {serv} from '../data/servises';
 
-export default App;
+
+
+
+
+const App = () => {
+
+
+
+
+  return (
+
+    <div className="page">
+
+        <section className="calculator">   
+
+        
+          <h1 className="calculator__title">
+            Fitness calculators
+          </h1>
+
+
+          <div className="calc">
+
+
+              <div className="calc__item">
+                <h2>Calories calculator</h2>
+              </div>
+              <div className="calc__item">
+                <h2>BMI</h2>
+              </div>
+
+          </div>
+
+
+          <div className="filter">
+            filter
+          </div>
+          <div className="cards">
+              
+            <Card 
+              //serv={serv} 
+             ></Card>
+
+          </div>
+
+         </section>
+
+
+    </div>
+
+  )
+
+}  
+
+export default App
