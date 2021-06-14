@@ -32,24 +32,18 @@ const App = () => {
 
               <div className="calc__item">
                 <h2>Calories calculator</h2>
+
+                <Card 
+	              //serv={serv} 
+	            ></Card>
+
               </div>
-              <div className="calc__item">
-                <h2>BMI</h2>
-              </div>
-
-          </div>
-
-
-          <div className="filter">
-            filter
-          </div>
-          <div className="cards">
               
-            <Card 
-              //serv={serv} 
-             ></Card>
-
           </div>
+
+     
+         
+          
 
          </section>
 
